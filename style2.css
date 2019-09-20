@@ -1,0 +1,82 @@
+body {
+    
+    background-color: white; 
+}
+
+
+#intro {
+    background-image: url(./Images/intro_header.jpg);
+    background-size: cover
+    color: white;
+    
+}
+
+#Summary {
+    background-image: url(./Images/summary_page_header.jpg);
+    background-size: cover;
+    color: white;     
+}
+
+#max_temp {
+    background-image: url(./Images/max_temperature.jpg);
+    background-size: cover;
+    color: white;      
+}
+
+#latitude_humidity {
+    background-image: url(./Images/humidity.jpg);
+    background-size: cover;
+    color: white;  
+}
+
+
+#latitude_vs_cloudiness {
+    background-image: url(./Images/lat_cloudiness.jpg);
+    background-size: cover;
+    color: white;      
+}
+
+#latitude_vs_windspeed {
+    background-image: url(./Images/lat_windspeed.jpg);
+    background-size: cover;
+    color: white;      
+}
+
+#data_tables {
+    background-image: url(./Images/data_header.jpg);
+    background-size: cover;
+    color: white;   
+}
+
+.navbar {
+    background-color: white;
+    
+}
+
+nav {
+    background-color: white;
+}
+
+.bins {
+    background-color: white; 
+    margin-top: 50px; 
+    margin-right: 20px; 
+    margin-left: 20px;
+}
+
+th, td {
+    white-space:  nowrap;
+}
+#footer {
+    background-color: #ccd3de;
+    bottom: 0;
+    width: 100%;
+    position:relative
+         /* Footer height */
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Georgia, serif;
+    color: #3e525c; 
+}

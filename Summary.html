@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<!--- nav --->
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index2.html">
+    <img src="./Images/icons8-earth-planet-48.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Climate
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Summary.html">Summary</a>  
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html">Data</a>  
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./latitude_max_temp.html">Latitude vs. Max Temperature</a>
+            <a class="dropdown-item" href="./latitude_humidity.html">Latitude vs. Humidity</a>
+            <a class="dropdown-item" href="./latitude_vs_cloudiness.html">Latitude vs. Cloudiness</a>
+            <a class="dropdown-item" href="./latitude_wind_speed.html">Latitude vs. Wind Speed</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Summary.html">Summary</a>
+            <a class="dropdown-item" href="Data.html">Data Page</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<! --- Header -->
+<div class="jumbotron jumbotron-fluid" id="Summary">
+  <div class="container">
+    <h1 class="display-4">Summary</h1>
+  </div>
+</div>
+<! -- container for summary visualizations --> 
+<div class="container-fluid">
+   <div class="container">
+        <div class="row">
+            <! --- Large Container --->
+            <div class="col bins">
+                <h2 class="display">Data Summary</h2>
+                <hr class="my-2"> <!-- controls header line -->
+                <div class="large-image">
+                <a href='Data.html'></a>
+                <p>
+                    The Equator is the parallel line located at 0°00’00”. It is identified as the latitude that falls at the point that is equidistant from the North Pole and the South Pole. The Equator’s covers a distance on the Earth’s surface approximately 24,901 miles long. The sun is perpendicular to the Equator twice a year in March and September. This event is called the Equinox. Areas on the Earth’s surface that fall on the Equator’s path are characterized by almost constant lengths of day and night.  Likewise, the Equator fluctuates and is identified as the plane that is perpendicular to the Earth’s rotational axis. 
+                </p>
+                <p>
+                    This webpage is aimed to analyze how weather changes as you get closer to the equator. To accomplish this analysis we pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.
+                </p>
+                <p>
+                    The factors looked at included:temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.  
+                </p>   
+                </div>
+            </div> 
+            <div class= "col bins">
+                <h2 class="display">Visualizations</h2>
+                <hr class="my-2"> 
+                  <div class="row">
+                    <div class="col"><a href='latitude_max_temp.html'><img src="./Images/max_temp.png" alt="Max Temperature" class="img-responsive" width="280" height="180"></a></div>
+                    <div class="col"><a href='latitude_humidity.html'><img src="./Images/latitude_humidity.png" alt="Humidity" class="img-responsive" width="280" height="180"></a>
+                    <div class="col"><a href='latitude_vs_cloudiness.html'><img src="./Images/latitude_cloudiness.png" alt="Cloudiness" class="img-responsive" width="280" height="180"></a>
+                    <div class="col"><a href='latitude_wind_speed.html'><img src="./Images/latitude_wind_speed.jpg" alt="Cloudiness" class="img-responsive" width="280" height="180"></a></div>
+            <!-- end of the row -->
+                </div>
+            </div>    
+        </div>        
+    </div>
+</div>
+    
+<!-- sticky footer -->
+<footer id = "footer" style="text-align: center;" class="container-fluid">
+        <span class="text-muted">&copy; 2019 Carolina Carrillo Github</span>
+</footer>
+</body>
